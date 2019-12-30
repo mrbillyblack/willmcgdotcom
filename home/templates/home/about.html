@@ -1,0 +1,49 @@
+{% extends "home/header.html" %}
+{% load staticfiles %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}	
+	<h1 style="text-align: center"><b><u>Portfolio</u><br><br></b></h1>
+	<div class="container row text-center">
+		<div class="card-rounded" style="width:20rem">
+			<img class="card-img-top bg-dark" src="{% static 'home/img/anas-alshanti-feXpdV001o4-unsplash.jpg' %}">
+            </br><font size="1" style="color: white; background-color:#3f577f"><b>Photo by Anas Alshanti on Unsplash</b></font>	 
+		</div>
+		<div class ="col-lg-8 text-md-right">
+			<p>Hey there! Thank you for visiting! Here is a list of my favorites out of the projects I have worked on. These are the projects that inspired me to pursue the goals that I am looking towards in the tech field. These were either projects that heavily introduced me to new environments or just projects that I had fun putting together. Enjoy your stay!</p>
+			<p class="text-md-right"><i>Best Regards, </i><br><b>William McGuire</b></p>
+		</div>
+		<div class="container"></div>
+
+	</div>
+	<hr class="my-4">
+	<div class="container row text-center px-4">
+		<div class="col-lg-4">
+			<img class="rounded" src="{% static 'home/img/ledbright.png' %}" style="width:270px; height:300px;"> 
+			<p><b>LED Brightness with Live Data Graphing</b>
+				</br>• A Python Project for the Raspberry Pi to control LED brightness using a Photoresistor. 
+				</br>• Also graphs the data received from the photoresistor in real time. 
+			</p>
+			<a type="button" class="text-center btn btn-success" href="https://github.com/wmmcguire/brightnessControl">View on Github!</a>
+		</div>
+		<div class="col-lg-4">
+			<img class="rounded" src="{% static 'home/img/alarmclockino.png' %}" style="width:300px; height:300px;"> 
+			<p><b>Alarm Clock</b>
+				</br>Simple alarm clock for the Arduino using Adafruit's 7-segment display LED backpack. 
+			</p>
+			<a type="button" class="text-center btn btn-success" href="https://github.com/wmmcguire/AlarmClockino">View on Github!</a>
+		</div>
+		<div class="col-lg-4">
+			<img class="rounded" src="{% static 'home/img/ovpn.png' %}" style="width:270px; height:300px;"> 
+			<p><b>OpenVPN Server + Network-Attached Storage</b>
+				</br>• Used encryption to create access to an OpenVPN server on a Raspberry Pi. 
+				</br>• Mounted external HDD to use with Samba. Currently implementing VPN access onto AWS Debian Machines.
+			</p>
+			
+		</div>
+	</div>
+		
+{% endblock %}
+
+

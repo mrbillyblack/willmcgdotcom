@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+  <html lang="en">
+  <head>
+  	<title>W.M. McGuire</title>
+  	<meta charset="utf-8">
+  	{% load staticfiles %}
+  	<link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}" type="text/css"/>
+    <!--<link rel="stylesheet" href="{% static 'home/css/font-awesome.css' %}" type="text/css"/>-->
+    <script src="https://kit.fontawesome.com/a7b833ca26.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="body" style="background-color: #3f577f;">
+     <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+          <div>
+            <div class="container d-flex navbar-left">
+              <a href="{% url 'index' %}" class="navbar-brand d-flex align-items-center" style="color:green">
+                   <font size="2"><b>W. McGuire</b></font>
+                </a>              
+            </div>
+            <div class="container navbar-right">
+ 
+            </div>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <ul class="navbar-nav px-2">
+              <li class="nav-item active px-2"><a href="{% url 'index' %}" style="color:#d6d81e;">Home </a></li>
+              <li class="nav-item px-2"><a href="{% url 'about' %}" style="color:#d6d81e;">Portfolio </a></li>
+             
+            </ul>  
+          </div> 
+        </nav>            
+      </header>
+    <!--body-->  
+  	<div class="container text-center" style="min-height: 95%;">
+  		<div class="jumbotron text-center" style="background-color:#f7f4f4; height:75%">
+        <div class="row">
+          <div class="col-lg-4 border-right text-center">
+      				<img class="rounded" src="{% static 'home/img/trill1.png' %}" style=" width:270px; height:350px;">
+          		</br>
+              </br>
+              <div class="container border-top text-center">
+                <h2><b>William McGuire</b></h2>
+                </br>Computer Engineering Technician
+                </br><i><b>IT Operations | Software Development</b></i>
+                
+                </br>
+
+                </br><u style="text-align: left"><b>Get in Touch!</b></u>
+                </br><a href="https://www.linkedin.com/in/wmmcguire/" style="color: #0b669e; align-content: center"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="https://github.com/wmmcguire" style="color: purple; align-content: center"><i class="fab fa-github-square fa-3x"></i></a>
+                <a href="https://docdro.id/DmGypT0" style="color: red; align-content: center"><i class="far fa-file fa-3x"></i></a>
+              </div>
+              
+          </div>
+          <div class="col-lg-8" data-spy="scroll" data-offset="20">
+            <h1><b><u>Welcome!</u></b></h1>
+            </br>
+            <font size="4">
+                Born and raised in Brooklyn, I am an aspiring IT Specialist and Developer based in New York City. The pursuit of my Bachelor's in Computer Engineering Technology had seasoned me in Computer Hardware, IT Operations, Data Communications, Applied Software, and Operating Systems. During college, I was known by Lab Technicians for my assistance with troubleshooting, disk imaging/installing, and demonstrating computer lab experiments.  
+              </br>
+              </br>
+              In the future, I would like to go into the Cyber Security field. Before getting into things like penetration testing and cryptography, however, I am devoting my time on developing my fundamentals in coding, Network Engineering, troubleshooting, and support.
+              </br>
+              </br>
+              </br>
+              </br>
+              On the side, I like to spend my time into gaming, making music, and working on my car. 
+              
+            </font>
+           
+          </div>
+        </div>
+  		</div>
+  		
+  	</div>
+  	<footer class="footer">
+      <nav class="navbar bg-primary">&copy Copyright 2019 William McGuire.</nav>
+  	</footer>
+  	
+  </body>
+
+</html>
